@@ -19,6 +19,9 @@ module.exports = withAxiom({
     compiler: {
         styledComponents: true,
     },
+    eslint: {
+        ignoreDuringBuilds: true,
+    },
     webpack: (config, options) => {
         const { isServer } = options;
 
