@@ -66,4 +66,5 @@ function MyApp({ Component, pageProps, router }: AppProps) {
         </>
     );
 }
+
 export default MyApp;

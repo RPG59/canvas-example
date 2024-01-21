@@ -35,7 +35,8 @@
     "@salutejs/scenario": "0.39.1",
     "@salutejs/spatial": "3.0.1",
     "@salutejs/storage-adapter-memory": "0.39.1",
-    "next": "13.1.2",
+    "next": "13.4.19",
+    "next-axiom": "1.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-query": "3.39.2",
@@ -79,7 +80,7 @@
     "stylelint-order": "4.0.0",
     "stylelint-processor-styled-components": "1.10.0",
     "stylelint-scss": "3.17.1",
-    "typescript": "4.3.5"
+    "typescript": "5.3.3"
   },
   "publishConfig": {
     "access": "public"

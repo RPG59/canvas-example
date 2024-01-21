@@ -1,7 +1,9 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
+const { withAxiom } = require('next-axiom');
+
 const { name: appName } = require('./package.json');
 
-module.exports = {
+module.exports = withAxiom({
     transpilePackages: ['@salutejs/spatial'],
     // адрес CDN для статики
     assetPrefix: process.env.PUBLIC_URL || '',
@@ -34,4 +36,4 @@ module.exports = {
 
         return config;
     },
-};
+});
