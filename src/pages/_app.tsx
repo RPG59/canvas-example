@@ -5,6 +5,7 @@ import { Container, DeviceThemeProvider } from '@salutejs/plasma-ui';
 import { QueryClientProvider } from 'react-query';
 import { spatnavInstance } from '@salutejs/spatial';
 import { useEffect } from 'react';
+import { HighlightInit } from '@highlight-run/next/client';
 
 import { useCharacterTheme } from '../utils/character';
 import { queryClient } from '../state/state';
@@ -46,6 +47,16 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
     return (
         <>
+            <HighlightInit
+                projectId="4d7w1pje"
+                serviceName="canvas-example"
+                tracingOrigins
+                networkRecording={{
+                    enabled: true,
+                    recordHeadersAndBody: true,
+                }}
+                debug
+            />
             <Head>
                 <title>Твой Canvas</title>
                 <meta name="description" content="Твой Canvas" />
