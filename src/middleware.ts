@@ -19,6 +19,7 @@ for (const [platform, regExp] of Object.entries(regExpByPlatform)) {
 }
 
 export function middleware(req: NextRequest) {
+    throw new Error('TEST ERROR!');
     const { ua } = userAgent(req);
     const url = req.nextUrl.clone();
     const trimmedPathname = url.pathname.substring(1);
